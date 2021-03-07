@@ -8,6 +8,22 @@
     <title>List</title>
 
     <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: #e0e0e0;
+        }
+
+        header {
+            background-color: rosybrown;
+        }
+
+        footer {
+            background-color: rosybrown;
+        }
+
         #mainContainer {
             height: 100%;
             width: 100%;
@@ -16,6 +32,11 @@
         #logoTop {
             height: 60px;
             width: 60px;
+        }
+
+        .images {
+            height: 200px;
+            width: 250px;
         }
     </style>
 </head>
@@ -26,34 +47,37 @@
             <a href="index.html"><img id="logoTop" src="assests/images/logo.png" alt="LOGO"></a>
             <a href="login.html">Login</a>
         </header>
+        <br>
         <div>
             <ul>
                 <li><a href="#list">List View</a></li>
                 <li><a href="#mapList">Map View</a></li>
             </ul>
             <div>
-                <div id="list">
+                <div id="list" style=" background-color: rgb(132,136,139);margin: 2%;width: 40%;">
                     <a href="detail.html">
-                        <img style="height: 200px;width: 250px;"
-                            src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-                        <h3>Radisson Blu Hotel</h3>
-                        <p>5 Star</p>
+                        <img class="images"
+                            src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br><br>
+                        <h3>Radisson Blu Hotel</h3><br>
+                        <p>5 Star</p><br>
                         <p>New Delhi</p>
                     </a>
                 </div>
-                <div>
-                    <img style="height: 200px;width: 250px;"
-                        src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg">
-                    <h3>The Lalit New Delhi</h3>
-                    <p>4.5 Star</p>
+                <div style=" background-color: rgb(132,136,139);margin: 2%;
+                width: 40%;">
+                    <img class="images"
+                        src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"><br><br>
+                    <h3>The Lalit New Delhi</h3><br>
+                    <p>4.5 Star</p><br>
                     <p>New Delhi</p>
                 </div>
 
-                <div>
-                    <img style="height: 200px;width: 250px;"
-                        src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg">
-                    <h3>Taj Palace</h3>
-                    <p>4.0 Star</p>
+                <div style=" background-color: rgb(132,136,139);margin: 2%;
+                width: 40%;">
+                    <img class="images"
+                        src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"><br><br>
+                    <h3>Taj Palace</h3><br>
+                    <p>4.0 Star</p><br>
                     <p>New Delhi</p>
                 </div>
             </div>

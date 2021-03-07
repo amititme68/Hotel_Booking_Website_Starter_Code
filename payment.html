@@ -12,9 +12,50 @@
             width: 100%;
         }
 
+        header {
+            background-color: rosybrown;
+        }
+
+        footer {
+            background-color: rosybrown;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: #e0e0e0;
+        }
+
         #logoTop {
             height: 60px;
             width: 60px;
+        }
+
+        #mainDiv {
+            background-color: rgb(132, 136, 139);
+            width: 50%;
+            height: 20%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #customer {
+            margin: 2%;
+        }
+
+        #payment {
+            margin: 2%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            padding-left: 2%;
+            padding-right: 2%;
+            border: 1px solid black;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -25,21 +66,21 @@
             <a href="index.html"><img id="logoTop" src="assests/images/logo.png" alt="LOGO"></a>
             <a href="login.html">Login</a>
         </header>
-        <div>
+        <div id="mainDiv">
             <img style="height: 500px;width: 500px;"
                 src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
             <h3>Radisson Blu Hotel</h3>
             <p>#38 of 1,289 hotels in New Delhi</p>
             <p>National Highway 8, New Delhi 110017 India</p>
         </div>
-        <div>
-            <p> <strong>Name:</strong> John Doe</p>
-            <p> <strong>Number of Adults:</strong> 2</p>
-            <p><strong>Check-in Date:</strong> 06/06/2020</p>
+        <div id="customer">
+            <p> <strong>Name:</strong> John Doe</p><br>
+            <p> <strong>Number of Adults:</strong> 2</p><br>
+            <p><strong>Check-in Date:</strong> 06/06/2020</p><br>
             <p><strong>Check-out Date:</strong> 08/06/2020</p>
         </div>
-        <div>
-            <p> <strong>Tariff Breakdown:</strong> Rs 1000 x 2 Adults x 5 Nights</p>
+        <div id="payment">
+            <p> <strong>Tariff Breakdown:</strong> Rs 1000 x 2 Adults x 5 Nights</p><br>
             <p> <strong>Total Amount:</strong> Rs 10000</p>
         </div>
         <div>

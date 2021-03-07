@@ -13,6 +13,22 @@
             width: 100%;
         }
 
+        header {
+            background-color: rosybrown;
+        }
+
+        footer {
+            background-color: rosybrown;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: #e0e0e0;
+        }
+
         #logoTop {
             height: 60px;
             width: 60px;
@@ -26,40 +42,46 @@
             <a href="index.html"><img id="logoTop" src="assests/images/logo.png" alt="LOGO"></a>
             <a href="login.html">Login</a>
         </header>
-        <div>
-            <img style="height: 500px;width: 500px;"
-                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
 
-            <form action="payment.html" method="GET">
-                <label for="Adults:">Adults:</label>
-                <input type="number" min="1" value="1" name="Adults:" id="Adults:"><br>
-                <label for="Name:">Name:</label>
-                <input type="text" autocomplete="off" name="Name:" id="Name:" required><br>
-                <label for="From Date:">From Date:</label>
-                <input type="date" name="From Date:" id="From Date:" required><br>
-                <label for="To Date:">To Date:</label>
-                <input type="date" name="To Date:" id="To Date:" required><br>
-                <label for="Total:">Total:</label>
-                <input type="text" name="Total:" id="Total:" readonly><br>
-                <input type="submit" value="Book Now">
-            </form>
-            <h2>Radisson Blu Hotel</h2>
-            <p>RATING</p>
-            <p>5 Star</p>
-            <p>AMENITIES</p>
-            <ul>
-                <li>Room Service</li>
-                <li>Restaurant</li>
-                <li>Business center</li>
-                <li>Fitness center</li>
-                <li>Pool</li>
-            </ul>
-            <h5>DESCRIPTION</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus dolorum ullam commodi, illum minus
-                et
-                blanditiis amet saepe numquam vel eveniet corrupti, consequuntur suscipit itaque ipsa tempora odio
-                libero
-                dolor sit amet consectetur adipisicing elit.</p>
+        <div>
+            <img style="height: 500px;width: 500px;margin-top: 2%;margin-left: 4%;margin-right: 4%;"
+                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
+            <div style="margin-left: 4%;margin-right: 4%;margin-bottom: 1%;">
+                <form action="payment.html" method="GET">
+                    <label for="Adults:">Adults:</label>
+                    <input type="number" min="1" value="1" name="Adults:" id="Adults:"><br>
+                    <label for="Name:">Name:</label>
+                    <input type="text" autocomplete="off" name="Name:" id="Name:" required><br>
+                    <label for="From Date:">From Date:</label>
+                    <input type="date" name="From Date:" id="From Date:" required><br>
+                    <label for="To Date:">To Date:</label>
+                    <input type="date" name="To Date:" id="To Date:" required><br>
+                    <label for="Total:">Total:</label>
+                    <input type="text" name="Total:" id="Total:" readonly><br>
+                    <input type="submit" value="Book Now">
+                </form>
+            </div>
+            <div style="margin-top:1% ;margin-left: 4%;margin-right:4%;margin-bottom:2% ;">
+                <h2>Radisson Blu Hotel</h2>
+                <p>RATING</p>
+                <p>5 Star</p>
+                <p>AMENITIES</p>
+                <ul>
+                    <li>Room Service</li>
+                    <li>Restaurant</li>
+                    <li>Business center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+                </ul>
+                <h5>DESCRIPTION</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus dolorum ullam commodi, illum
+                    minus
+                    et
+                    blanditiis amet saepe numquam vel eveniet corrupti, consequuntur suscipit itaque ipsa tempora odio
+                    libero
+                    dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
         </div>
         <footer>
             <a href="contact.html">Contact Us</a><br>
