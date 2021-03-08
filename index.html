@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
+        }
+
+        * {
+            font-family: 'Ubuntu', sans-serif;
         }
 
         body {
@@ -22,21 +27,28 @@
 
         header {
             background-color: rosybrown;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0px;
+
         }
 
         footer {
             background-color: rosybrown;
+            position: sticky;
+            bottom: 0px;
         }
 
         #logoTop {
             height: 60px;
             width: 60px;
+            vertical-align: middle;
         }
 
         #searchBox {
             background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
             height: 380px;
-            background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -48,9 +60,71 @@
             border-radius: 25%;
         }
 
+        #login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-right: 1%;
+            text-decoration: none;
+            color: black;
+        }
+
+        #contact {
+            float: left;
+            margin-left: 1%;
+            margin-top: 1%;
+            text-decoration: none;
+            color: black;
+        }
+
         #container {
             margin-left: 15%;
             margin-right: 15%;
+        }
+
+        .footImages {
+            height: 20px;
+            width: 22px;
+        }
+
+        #copyright {
+            font-size: 10px;
+
+            position: relative;
+            clear: both;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #box {
+
+            border: 1px solid transparent;
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 12px;
+            width: 24em;
+            margin-top: 170px;
+            margin-bottom: 170px;
+            margin-left: 450px;
+        }
+
+        #socialLogo {
+            float: right;
+            margin-right: 1%;
+            margin-top: 1%;
+        }
+
+        #view {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            padding-bottom: 2%;
+            text-decoration: none;
+            color: black;
+            text-align: center;
         }
     </style>
 
@@ -60,11 +134,11 @@
     <div id="mainContainer">
         <header>
             <img id="logoTop" src="assests/images/logo.png" alt="LOGO">
-            <a href="login.html">Login</a>
+            <a id="login" href="login.html">Login</a>
         </header>
         <div>
             <div id="searchBox">
-                <input type="text" placeholder="City"><br>
+                <input id="box" type="text" placeholder="City"><br>
             </div>
 
             <div id="container">
@@ -76,22 +150,21 @@
                 <img class="images" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
                 <img class="images"
                     src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"><br>
-
             </div>
-            <a href="index.html">View more>></a>
+            <a id="view" href="index.html">View more>></a>
         </div>
         <footer>
-            <a href="contact.html">Contact Us</a><br>
-            <a href="https://www.facebook.com" target="_blank">
-                <img style="height: 20px;width: 22px;" src="assests/images/facebook.png" alt="LOGO">
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img style="height: 20px;width: 22px;" src="assests/images/instagram.png" alt="LOGO">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img style="height: 20px;width: 22px;" src="assests/images/twitter.png" alt="LOGO">
-            </a><br>
-            &#169; ROOM SEARCH PVT. LTD.
+            <a id="contact" href="contact.html">Contact Us</a>
+
+            <span id="socialLogo">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="footImages" src="assests/images/facebook.png" alt="LOGO"></a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="footImages" src="assests/images/instagram.png" alt="LOGO"></a>
+                <a href="https://twitter.com" target="_blank">
+                    <img class="footImages" src="assests/images/twitter.png" alt="LOGO"></a><br>
+            </span>
+            <div id="copyright">&#169; ROOM SEARCH PVT. LTD.</div>
         </footer>
     </div>
 </body>

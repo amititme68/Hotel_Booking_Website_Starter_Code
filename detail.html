@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
     <style>
+        * {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
         #mainContainer {
             height: 100%;
             width: 100%;
@@ -15,10 +20,46 @@
 
         header {
             background-color: rosybrown;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0px;
+
+        }
+
+        #login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-right: 1%;
+            text-decoration: none;
+            color: black;
+        }
+
+        #contact {
+            float: left;
+            margin-left: 1%;
+            margin-top: 1%;
+            text-decoration: none;
+            color: black;
+        }
+
+        #socialLogo {
+            float: right;
+            margin-right: 1%;
+            margin-top: 1%;
         }
 
         footer {
             background-color: rosybrown;
+            position: sticky;
+            bottom: 0px;
+        }
+
+        .footImages {
+            height: 20px;
+            width: 22px;
         }
 
         * {
@@ -32,6 +73,17 @@
         #logoTop {
             height: 60px;
             width: 60px;
+            vertical-align: middle;
+        }
+
+        #copyright {
+            font-size: 10px;
+
+            position: relative;
+            clear: both;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
         }
     </style>
 </head>
@@ -40,7 +92,7 @@
     <div id="mainContainer">
         <header>
             <a href="index.html"><img id="logoTop" src="assests/images/logo.png" alt="LOGO"></a>
-            <a href="login.html">Login</a>
+            <a id="login" href="login.html">Login</a>
         </header>
 
         <div>
@@ -84,17 +136,17 @@
 
         </div>
         <footer>
-            <a href="contact.html">Contact Us</a><br>
-            <a href="https://www.facebook.com" target="_blank">
-                <img style="height: 20px;width: 22px;" src="assests/images/facebook.png" alt="LOGO">
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img style="height: 20px;width: 22px;" src="assests/images/instagram.png" alt="LOGO">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img style="height: 20px;width: 22px;" src="assests/images/twitter.png" alt="LOGO">
-            </a><br>
-            &#169; ROOM SEARCH PVT. LTD.
+            <a id="contact" href="contact.html">Contact Us</a>
+
+            <span id="socialLogo">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="footImages" src="assests/images/facebook.png" alt="LOGO"></a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="footImages" src="assests/images/instagram.png" alt="LOGO"></a>
+                <a href="https://twitter.com" target="_blank">
+                    <img class="footImages" src="assests/images/twitter.png" alt="LOGO"></a><br>
+            </span>
+            <div id="copyright">&#169; ROOM SEARCH PVT. LTD.</div>
         </footer>
     </div>
 </body>

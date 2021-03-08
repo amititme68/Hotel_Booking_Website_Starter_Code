@@ -6,18 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <style>
+        * {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
         #mainContainer {
             height: 100%;
             width: 100%;
         }
 
+        * {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
         header {
             background-color: rosybrown;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0px;
+
+        }
+
+        .footImages {
+            height: 20px;
+            width: 22px;
+        }
+
+        #contact {
+            float: left;
+            margin-left: 1%;
+            margin-top: 1%;
+            text-decoration: none;
+            color: black;
+        }
+
+        #socialLogo {
+            float: right;
+            margin-right: 1%;
+            margin-top: 1%;
         }
 
         footer {
             background-color: rosybrown;
+            position: sticky;
+            bottom: 0px;
         }
 
         * {
@@ -31,6 +66,7 @@
         #logoTop {
             height: 60px;
             width: 60px;
+            vertical-align: middle;
         }
 
         #mainDiv {
@@ -57,6 +93,26 @@
             border: 1px solid black;
             border-radius: 5px;
         }
+
+        #copyright {
+            font-size: 10px;
+
+            position: relative;
+            clear: both;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-right: 1%;
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 
@@ -64,7 +120,7 @@
     <div id="mainContainer">
         <header>
             <a href="index.html"><img id="logoTop" src="assests/images/logo.png" alt="LOGO"></a>
-            <a href="login.html">Login</a>
+            <a id="login" href="login.html">Login</a>
         </header>
         <div id="mainDiv">
             <img style="height: 500px;width: 500px;"
@@ -83,21 +139,21 @@
             <p> <strong>Tariff Breakdown:</strong> Rs 1000 x 2 Adults x 5 Nights</p><br>
             <p> <strong>Total Amount:</strong> Rs 10000</p>
         </div>
-        <div>
-            <a href="payment.html">Pay Now</a>
+        <div style="margin-bottom: 2%;">
+            <a style="text-decoration: none;color: black;" href="payment.html">Pay Now</a>
         </div>
         <footer>
-            <a href="contact.html">Contact Us</a><br>
-            <a href="https://www.facebook.com" target="_blank">
-                <img style="height: 20px;width: 22px;" src="assests/images/facebook.png" alt="LOGO">
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img style="height: 20px;width: 22px;" src="assests/images/instagram.png" alt="LOGO">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img style="height: 20px;width: 22px;" src="assests/images/twitter.png" alt="LOGO">
-            </a><br>
-            &#169; ROOM SEARCH PVT. LTD.
+            <a id="contact" href="contact.html">Contact Us</a>
+
+            <span id="socialLogo">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="footImages" src="assests/images/facebook.png" alt="LOGO"></a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="footImages" src="assests/images/instagram.png" alt="LOGO"></a>
+                <a href="https://twitter.com" target="_blank">
+                    <img class="footImages" src="assests/images/twitter.png" alt="LOGO"></a><br>
+            </span>
+            <div id="copyright">&#169; ROOM SEARCH PVT. LTD.</div>
         </footer>
     </div>
 </body>

@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
     <style>
+        * {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
         * {
             margin: 0;
         }
@@ -18,10 +23,27 @@
 
         header {
             background-color: rosybrown;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0px;
+
         }
 
         footer {
             background-color: rosybrown;
+            position: sticky;
+            bottom: 0px;
+        }
+
+        #copyright {
+            font-size: 10px;
+
+            position: relative;
+            clear: both;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
         }
 
         #mainContainer {
@@ -29,14 +51,63 @@
             width: 100%;
         }
 
+        #contact {
+            float: left;
+            margin-left: 1%;
+            margin-top: 1%;
+            text-decoration: none;
+            color: black;
+        }
+
+        #socialLogo {
+            float: right;
+            margin-right: 1%;
+            margin-top: 1%;
+        }
+
         #logoTop {
             height: 60px;
             width: 60px;
+            vertical-align: middle;
         }
 
         .images {
             height: 200px;
             width: 250px;
+        }
+
+        #login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-right: 1%;
+            text-decoration: none;
+            color: black;
+        }
+
+        .footImages {
+            height: 20px;
+            width: 22px;
+        }
+
+        .list {
+            background-color: rgb(132, 136, 139);
+            margin: 2%;
+            width: 40%;
+            float: left;
+        }
+
+        #list-map {
+            font-weight: bold;
+            color: black;
+            display: flex;
+            align-content: center;
+            justify-content: space-evenly;
+            margin-left: 34%;
+            margin-right: 48%;
+            padding-top: 1%;
+
         }
     </style>
 </head>
@@ -45,17 +116,18 @@
     <div id="mainContainer">
         <header>
             <a href="index.html"><img id="logoTop" src="assests/images/logo.png" alt="LOGO"></a>
-            <a href="login.html">Login</a>
+            <a id="login" href="login.html">Login</a>
         </header>
         <br>
-        <div>
-            <ul>
-                <li><a href="#list">List View</a></li>
-                <li><a href="#mapList">Map View</a></li>
-            </ul>
+        <div style="align-items: center;">
+            <div id="list-map">
+                <a style="text-decoration: none;color: black;font-weight:bold;" href="#list">List View</a>
+                <a style="text-decoration: none;color: black;font-weight: bold;" href="#mapList">Map View</a>
+            </div>
+
             <div>
-                <div id="list" style=" background-color: rgb(132,136,139);margin: 2%;width: 40%;">
-                    <a href="detail.html">
+                <div class="list">
+                    <a style="text-decoration: none;color: black;" href="detail.html">
                         <img class="images"
                             src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br><br>
                         <h3>Radisson Blu Hotel</h3><br>
@@ -63,8 +135,7 @@
                         <p>New Delhi</p>
                     </a>
                 </div>
-                <div style=" background-color: rgb(132,136,139);margin: 2%;
-                width: 40%;">
+                <div class="list">
                     <img class="images"
                         src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"><br><br>
                     <h3>The Lalit New Delhi</h3><br>
@@ -72,8 +143,7 @@
                     <p>New Delhi</p>
                 </div>
 
-                <div style=" background-color: rgb(132,136,139);margin: 2%;
-                width: 40%;">
+                <div class="list">
                     <img class="images"
                         src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"><br><br>
                     <h3>Taj Palace</h3><br>
@@ -89,17 +159,17 @@
 
         </div>
         <footer>
-            <a href="contact.html">Contact Us</a><br>
-            <a href="https://www.facebook.com" target="_blank">
-                <img style="height: 20px;width: 22px;" src="assests/images/facebook.png" alt="LOGO">
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img style="height: 20px;width: 22px;" src="assests/images/instagram.png" alt="LOGO">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img style="height: 20px;width: 22px;" src="assests/images/twitter.png" alt="LOGO">
-            </a><br>
-            &#169; ROOM SEARCH PVT. LTD.
+            <a id="contact" href="contact.html">Contact Us</a>
+
+            <span id="socialLogo">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="footImages" src="assests/images/facebook.png" alt="LOGO"></a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="footImages" src="assests/images/instagram.png" alt="LOGO"></a>
+                <a href="https://twitter.com" target="_blank">
+                    <img class="footImages" src="assests/images/twitter.png" alt="LOGO"></a><br>
+            </span>
+            <div id="copyright">&#169; ROOM SEARCH PVT. LTD.</div>
         </footer>
     </div>
 </body>
