@@ -20,9 +20,21 @@
             background-color: #e0e0e0;
         }
 
-        #mainContainer {
-            height: 100%;
-            width: 100%;
+        #logoTop {
+            height: 60px;
+            width: 60px;
+            vertical-align: middle;
+            margin-left: 1%;
+        }
+
+        #login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-right: 2%;
+            text-decoration: none;
+            color: black;
         }
 
         header {
@@ -31,56 +43,36 @@
             justify-content: space-between;
             position: sticky;
             top: 0px;
-
+            width: 100%;
         }
 
         footer {
-            background-color: rosybrown;
             position: sticky;
+            background-color: rosybrown;
             bottom: 0px;
         }
 
-        #logoTop {
-            height: 60px;
-            width: 60px;
-            vertical-align: middle;
-        }
-
-        #searchBox {
-            background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
-            height: 380px;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .images {
-            height: 150px;
-            width: 150px;
-            padding: 4%;
-            border-radius: 25%;
-        }
-
-        #login {
+        #footerContainer {
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
-            margin-right: 1%;
-            text-decoration: none;
-            color: black;
+            justify-content: space-between;
+            vertical-align: middle;
+            height: 40px;
         }
 
         #contact {
-            float: left;
-            margin-left: 1%;
-            margin-top: 1%;
-            text-decoration: none;
-            color: black;
+            margin-left: 2%;
         }
 
-        #container {
-            margin-left: 15%;
-            margin-right: 15%;
+        #copyright {
+            font-size: 10px;
+
+        }
+
+        #socialLogo {
+            float: right;
+            margin-right: 2%;
         }
 
         .footImages {
@@ -88,83 +80,163 @@
             width: 22px;
         }
 
-        #copyright {
-            font-size: 10px;
-
-            position: relative;
-            clear: both;
-            margin-left: auto;
-            margin-right: auto;
+        .content {
+            display: flex;
+            flex-direction: column;
             text-align: center;
+            justify-content: center;
+
         }
 
-        #box {
+        #searchBackground {
+            background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+            height: 260px;
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
 
+        #searchBox {
             border: 1px solid transparent;
             background-color: #f1f1f1;
             padding: 10px;
             font-size: 16px;
             border-radius: 12px;
             width: 24em;
-            margin-top: 170px;
-            margin-bottom: 170px;
-            margin-left: 450px;
+            outline: none;
         }
 
-        #socialLogo {
-            float: right;
-            margin-right: 1%;
-            margin-top: 1%;
+        .images {
+            height: 150px;
+            width: 150px;
+            border-radius: 25%;
         }
 
-        #view {
+        .cityCard {
             display: flex;
             align-content: center;
-            justify-content: center;
-            padding-bottom: 2%;
-            text-decoration: none;
-            color: black;
-            text-align: center;
+            padding: 2%;
+            justify-content: space-evenly;
         }
+        .cityCard img{     
+                border-radius: 25%;
+            }
+            .cityCard div {
+                margin: 4%;
+                border-radius: 25%;
+                width: 150px;
+                height: 150px;
+                box-shadow: 10px 10px 10px grey;
+            }
+
+        .card1 {position: relative;}
+            .card2 {position: relative;}
+            .card3 {position: relative;}
+            .card4 {position: relative;}
+
+        .card1:hover .text{opacity: 1;}
+            .card1:hover .middle{opacity: 0.5;}
+            .card2:hover .text{opacity: 1;}
+            .card2:hover .middle{opacity: 0.5;}
+            .card3:hover .text{opacity: 1;}
+            .card3:hover .middle{opacity: 0.5;}
+            .card4:hover .text{opacity: 1;}
+            .card4:hover .middle{opacity: 0.5;}
+
+            .text {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                top: -6;
+                left: -6;
+                right: 0;
+                bottom: 0;
+                color: #f1f1f1;
+            }
+            .middle {
+                transition: .1s ease;
+                opacity: 0;
+                top: -6;
+                left: -6;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0,0,0,0.5);
+                position: absolute;
+            }
     </style>
 
 </head>
 
 <body>
-    <div id="mainContainer">
+    <div>
         <header>
             <img id="logoTop" src="assests/images/logo.png" alt="LOGO">
             <a id="login" href="login.html">Login</a>
         </header>
-        <div>
-            <div id="searchBox">
-                <input id="box" type="text" placeholder="City"><br>
+
+        <div class="content">
+            <div id="searchBackground">
+                <div style="margin-top: 10%;">
+                <input id="searchBox" type="text" placeholder="City">
+            </div>
             </div>
 
-            <div id="container">
-                <a href="list.html">
-                    <img class="images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg">
-                </a>
-                <img class="images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
 
-                <img class="images" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
-                <img class="images"
-                    src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"><br>
+            <div class="cityCard">
+                <div class="card1">
+                    <a href="list.html">
+                        <img class="images"
+                            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg">
+                            <div class="middle"></div>
+                <div class="text">Delhi</div>
+                    </a>
+                </div>
+
+                <div class="card2">
+                    <img class="images" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
+                    <div class="middle"></div>
+                <div class="text">Goa</div>
+                </div>
+
+                <div class="card3">
+                    <img class="images" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
+                    <div class="middle"></div>
+                    <div class="text">Hyderabad</div>
+                </div>
+                <div class="card4">
+                    <img class="images"
+                        src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
+                        <div class="middle"></div>
+                <div class="text">Kolkata</div>
+                </div>
             </div>
-            <a id="view" href="index.html">View more>></a>
+
+
+
+
+
+            <div style="margin-bottom: 2%;"><a style="text-decoration: none;color: black;" href="index.html">View more>></a></div>
         </div>
-        <footer>
-            <a id="contact" href="contact.html">Contact Us</a>
 
-            <span id="socialLogo">
-                <a href="https://www.facebook.com" target="_blank">
-                    <img class="footImages" src="assests/images/facebook.png" alt="LOGO"></a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img class="footImages" src="assests/images/instagram.png" alt="LOGO"></a>
-                <a href="https://twitter.com" target="_blank">
-                    <img class="footImages" src="assests/images/twitter.png" alt="LOGO"></a><br>
-            </span>
-            <div id="copyright">&#169; ROOM SEARCH PVT. LTD.</div>
+        <footer>
+            <div id="footerContainer">
+                <div id="contact"> <a style="text-decoration: none;color: black;" href="contact.html">Contact Us</a>
+                </div>
+                <div id="copyright">&#169; ROOM SEARCH PVT. LTD.</div>
+
+                <div id="socialLogo">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img class="footImages" src="assests/images/facebook.png" alt="LOGO"></a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img class="footImages" src="assests/images/instagram.png" alt="LOGO"></a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img class="footImages" src="assests/images/twitter.png" alt="LOGO"></a>
+                </div>
+
+            </div>
+
         </footer>
     </div>
 </body>

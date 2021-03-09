@@ -27,23 +27,36 @@
             justify-content: space-between;
             position: sticky;
             top: 0px;
-
+            width: 100%;
         }
 
         footer {
-            background-color: rosybrown;
             position: sticky;
+            background-color: rosybrown;
             bottom: 0px;
+        }
+
+        #footerContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            vertical-align: middle;
+            height: 40px;
+        }
+
+        #contact {
+            margin-left: 2%;
         }
 
         #copyright {
             font-size: 10px;
 
-            position: relative;
-            clear: both;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
+        }
+
+        #socialLogo {
+            float: right;
+            margin-right: 2%;
         }
 
         #mainContainer {
@@ -51,29 +64,13 @@
             width: 100%;
         }
 
-        #contact {
-            float: left;
-            margin-left: 1%;
-            margin-top: 1%;
-            text-decoration: none;
-            color: black;
-        }
-
-        #socialLogo {
-            float: right;
-            margin-right: 1%;
-            margin-top: 1%;
-        }
+      
 
         #logoTop {
             height: 60px;
             width: 60px;
             vertical-align: middle;
-        }
-
-        .images {
-            height: 200px;
-            width: 250px;
+            margin-left: 1%;
         }
 
         #login {
@@ -81,18 +78,26 @@
             justify-content: center;
             align-items: center;
             position: relative;
-            margin-right: 1%;
+            margin-right: 2%;
             text-decoration: none;
             color: black;
         }
+
+        .images {
+            height: 200px;
+            width: 250px;
+            float: left;
+            margin-right: 2%;
+        }
+
 
         .footImages {
             height: 20px;
             width: 22px;
         }
 
-        .list {
-            background-color: rgb(132, 136, 139);
+        #list {
+            background-color: lightgrey;
             margin: 2%;
             width: 40%;
             float: left;
@@ -109,6 +114,7 @@
             padding-top: 1%;
 
         }
+
     </style>
 </head>
 
@@ -126,16 +132,17 @@
             </div>
 
             <div>
-                <div class="list">
+                <div id="list">
                     <a style="text-decoration: none;color: black;" href="detail.html">
                         <img class="images"
                             src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br><br>
+
                         <h3>Radisson Blu Hotel</h3><br>
                         <p>5 Star</p><br>
                         <p>New Delhi</p>
                     </a>
                 </div>
-                <div class="list">
+                <div id="list">
                     <img class="images"
                         src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"><br><br>
                     <h3>The Lalit New Delhi</h3><br>
@@ -143,7 +150,7 @@
                     <p>New Delhi</p>
                 </div>
 
-                <div class="list">
+                <div id="list">
                     <img class="images"
                         src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"><br><br>
                     <h3>Taj Palace</h3><br>
@@ -152,24 +159,29 @@
                 </div>
             </div>
 
-            <div id="mapList">
+            <div id="mapList" style="visibility: hidden;">
                 <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
                 <p>MAP VIEW</p>
             </div>
 
         </div>
         <footer>
-            <a id="contact" href="contact.html">Contact Us</a>
+            <div id="footerContainer">
+                <div id="contact"> <a style="text-decoration: none;color: black;" href="contact.html">Contact Us</a>
+                </div>
+                <div id="copyright">&#169; ROOM SEARCH PVT. LTD.</div>
 
-            <span id="socialLogo">
-                <a href="https://www.facebook.com" target="_blank">
-                    <img class="footImages" src="assests/images/facebook.png" alt="LOGO"></a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img class="footImages" src="assests/images/instagram.png" alt="LOGO"></a>
-                <a href="https://twitter.com" target="_blank">
-                    <img class="footImages" src="assests/images/twitter.png" alt="LOGO"></a><br>
-            </span>
-            <div id="copyright">&#169; ROOM SEARCH PVT. LTD.</div>
+                <div id="socialLogo">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img class="footImages" src="assests/images/facebook.png" alt="LOGO"></a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img class="footImages" src="assests/images/instagram.png" alt="LOGO"></a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img class="footImages" src="assests/images/twitter.png" alt="LOGO"></a>
+                </div>
+
+            </div>
+
         </footer>
     </div>
 </body>

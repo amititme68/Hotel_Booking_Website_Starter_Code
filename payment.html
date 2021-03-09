@@ -35,13 +35,7 @@
             width: 22px;
         }
 
-        #contact {
-            float: left;
-            margin-left: 1%;
-            margin-top: 1%;
-            text-decoration: none;
-            color: black;
-        }
+      
 
         #socialLogo {
             float: right;
@@ -49,15 +43,12 @@
             margin-top: 1%;
         }
 
-        footer {
-            background-color: rosybrown;
-            position: sticky;
-            bottom: 0px;
-        }
+       
 
         * {
             margin: 0;
         }
+       
 
         body {
             background-color: #e0e0e0;
@@ -94,15 +85,7 @@
             border-radius: 5px;
         }
 
-        #copyright {
-            font-size: 10px;
-
-            position: relative;
-            clear: both;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
+      
 
         #login {
             display: flex;
@@ -113,6 +96,77 @@
             text-decoration: none;
             color: black;
         }
+
+        footer {
+            position: sticky;
+            background-color: rosybrown;
+            bottom: 0px;
+        }
+
+        #footerContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            vertical-align: middle;
+            height: 40px;
+        }
+
+        #contact {
+            margin-left: 2%;
+        }
+
+        #copyright {
+            font-size: 10px;
+
+        }
+        .container {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 8%;
+            }
+            #content img{
+                height: 100%;
+                width: 45%;
+            }
+
+            #detail {
+                display: flex;
+                flex-direction: column;
+                margin-top: 10%;
+                margin-left: 2%;
+                float: left;
+            }
+            #content {
+                background-color: rgb(132,136,139);
+                width: 40%;
+                height: 200px;
+                margin: 0 auto;
+                margin-bottom: 3%;
+                margin-top: 6%;
+                display: flex;
+                float: left;
+                
+                
+            }
+            #content2 {
+                background-color: rosybrown;
+                margin: 2%;
+                border: 1px solid black;
+                border-radius: 5px;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                padding-left: 2%;
+                padding-right: 2%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+        #socialLogo {
+            float: right;
+            margin-right: 2%;
+        }
     </style>
 </head>
 
@@ -122,38 +176,48 @@
             <a href="index.html"><img id="logoTop" src="assests/images/logo.png" alt="LOGO"></a>
             <a id="login" href="login.html">Login</a>
         </header>
-        <div id="mainDiv">
-            <img style="height: 500px;width: 500px;"
-                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
-            <h3>Radisson Blu Hotel</h3>
-            <p>#38 of 1,289 hotels in New Delhi</p>
-            <p>National Highway 8, New Delhi 110017 India</p>
-        </div>
-        <div id="customer">
-            <p> <strong>Name:</strong> John Doe</p><br>
-            <p> <strong>Number of Adults:</strong> 2</p><br>
-            <p><strong>Check-in Date:</strong> 06/06/2020</p><br>
-            <p><strong>Check-out Date:</strong> 08/06/2020</p>
-        </div>
-        <div id="payment">
-            <p> <strong>Tariff Breakdown:</strong> Rs 1000 x 2 Adults x 5 Nights</p><br>
-            <p> <strong>Total Amount:</strong> Rs 10000</p>
-        </div>
-        <div style="margin-bottom: 2%;">
-            <a style="text-decoration: none;color: black;" href="payment.html">Pay Now</a>
-        </div>
-        <footer>
-            <a id="contact" href="contact.html">Contact Us</a>
 
-            <span id="socialLogo">
-                <a href="https://www.facebook.com" target="_blank">
-                    <img class="footImages" src="assests/images/facebook.png" alt="LOGO"></a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img class="footImages" src="assests/images/instagram.png" alt="LOGO"></a>
-                <a href="https://twitter.com" target="_blank">
-                    <img class="footImages" src="assests/images/twitter.png" alt="LOGO"></a><br>
-            </span>
-            <div id="copyright">&#169; ROOM SEARCH PVT. LTD.</div>
+        <div class="container">
+            <div id="content">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
+                <div id="detail">
+                    <h2><strong> Radisson Blu Hotel</strong> </h2><br>
+                <p style="font-size: 13px;">#38 of 1,289 hotels in New Delhi</p>
+                <p style="font-size: 13px;">National Highway 8, New Delhi 110017, India</p></div>
+            </div>
+            <div id="content2">
+                <div id="info">
+                    <p><strong style="font-size:15px;font-family: cursive;">Name:</strong> John Doe</p><br>
+                    <p><strong style="font-size:15px;font-family: cursive;">Number of Adults:</strong> 2</p><br>
+                    <p><strong style="font-size:15px;font-family: cursive;">Check-in Date:</strong> 06/06/2020</p><br>
+                    <p><strong style="font-size:15px;font-family: cursive;">Check-out Date:</strong> 11/06/2020</p>
+                </div>
+                <div id="price-details">
+                    <p><strong style="font-size:15px;font-family: cursive;">Tariff Breakdown:</strong> Rs.1000 x 2 Adults x 5 Nights</p><br>
+                    <p><strong style="font-size:15px;font-family: cursive;">Total Amount:</strong> Rs.10000</p>
+                </div>
+                <p><a style="text-decoration: none;color: black;" href="E:\HTML\Hotel Booking Website\payment.html">Pay Now</a></p>
+            </div>
+        </div>
+
+
+        <footer>
+            <div id="footerContainer">
+                <div id="contact"> <a style="text-decoration: none;color: black;" href="contact.html">Contact Us</a>
+                </div>
+                <div id="copyright">&#169; ROOM SEARCH PVT. LTD.</div>
+
+                <div id="socialLogo">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img class="footImages" src="assests/images/facebook.png" alt="LOGO"></a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img class="footImages" src="assests/images/instagram.png" alt="LOGO"></a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img class="footImages" src="assests/images/twitter.png" alt="LOGO"></a>
+                </div>
+
+            </div>
+
         </footer>
     </div>
 </body>
