@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
     <style>
         * {
             font-family: 'Ubuntu', sans-serif;
@@ -150,6 +160,7 @@
                 
             }
             #content2 {
+                font-family: cursive;
                 background-color: rosybrown;
                 margin: 2%;
                 border: 1px solid black;
@@ -162,7 +173,6 @@
                 align-items: center;
                 justify-content: space-evenly;
             }
-
         #socialLogo {
             float: right;
             margin-right: 2%;
@@ -181,30 +191,31 @@
             <div id="content">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
                 <div id="detail">
-                    <h2><strong> Radisson Blu Hotel</strong> </h2><br>
+                    <h4><strong> Radisson Blu Hotel</strong> </h4><br>
                 <p style="font-size: 13px;">#38 of 1,289 hotels in New Delhi</p>
                 <p style="font-size: 13px;">National Highway 8, New Delhi 110017, India</p></div>
             </div>
             <div id="content2">
                 <div id="info">
-                    <p><strong style="font-size:15px;font-family: cursive;">Name:</strong> John Doe</p><br>
-                    <p><strong style="font-size:15px;font-family: cursive;">Number of Adults:</strong> 2</p><br>
-                    <p><strong style="font-size:15px;font-family: cursive;">Check-in Date:</strong> 06/06/2020</p><br>
-                    <p><strong style="font-size:15px;font-family: cursive;">Check-out Date:</strong> 11/06/2020</p>
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Number of Adults:</strong> 2</p>
+                    <p><strong>Check-in Date:</strong> 06/06/2020</p>
+                    <p><strong>Check-out Date:</strong> 11/06/2020</p>
                 </div>
                 <div id="price-details">
-                    <p><strong style="font-size:15px;font-family: cursive;">Tariff Breakdown:</strong> Rs.1000 x 2 Adults x 5 Nights</p><br>
-                    <p><strong style="font-size:15px;font-family: cursive;">Total Amount:</strong> Rs.10000</p>
+                    <p><strong>Tariff Breakdown:</strong> Rs.1000 x 2 Adults x 5 Nights</p>
+                    <p><strong>Toatal Amount:</strong> Rs.10000</p>
                 </div>
-                <p><a style="text-decoration: none;color: black;" href="E:\HTML\Hotel Booking Website\payment.html">Pay Now</a></p>
+                <p><button type="button" class="btn btn-success" disabled>Pay Now</button></p>
             </div>
         </div>
 
 
         <footer>
             <div id="footerContainer">
-                <div id="contact"> <a style="text-decoration: none;color: black;" href="contact.html">Contact Us</a>
-                </div>
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal1" style="display: flex;">
+                    Contact Us
+                </button>
                 <div id="copyright">&#169; ROOM SEARCH PVT. LTD.</div>
 
                 <div id="socialLogo">
@@ -221,5 +232,29 @@
         </footer>
     </div>
 </body>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+            <p>Thank you for reaching out!!!</p>
+            <P>Please enter your email and we will get back to you.</P>
+            <form action="E:\HTML\Hotel Booking Website\index.html" method="GET">
+                <p><label for="Username">Email:</label>
+                <input type="email" id="Username" placeholder="Enter your email id" required/></p>
+            </form>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        </div>
+    </div>
+    </div>
+</div>
 
 </html>
