@@ -3,6 +3,9 @@
     width: 150px;
     border-radius: 25%;
     box-shadow: 10px 10px 10px grey;
+    
+
+    
 }
 
 #index-container {
@@ -23,8 +26,12 @@
 
 #city-cards {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
     padding: 4% 0%;
+    width: 90%;
+    margin: 1% 5%;
+
 }
 
 .overlay {
@@ -38,6 +45,8 @@
     text-align: center;
     border-radius: 25%;
 }
+
+
 
 
 .city-card-and-name-inner {
