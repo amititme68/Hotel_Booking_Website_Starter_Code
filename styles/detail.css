@@ -11,8 +11,9 @@
     max-width: 60%;
 }
 #booking-form {
-    margin-right: 2%;
+    margin-right: 4%;
     flex-grow: 1;
+    
 }
 #hotel-description {
     margin: 2%;
@@ -25,6 +26,7 @@
     display: flex;
     justify-content: start;
     align-content: center;
+    
 }
 .slider-image {
     max-height: 350px;
@@ -57,4 +59,61 @@
   content: '<';
   font-size: 55px;
   color: rosybrown;
+}
+
+
+@media only screen and (max-width: 768px){
+    img{
+        max-width: 100%;
+    }
+    .social-media-images{
+        margin-right: 12%;
+    }
+
+    #slideshow-booking {
+        display: flex;
+        justify-content: start;
+        align-content: center;
+        margin-top: 10%;
+    }
+    .slider-image {
+    height: 295px;
+    }
+   
+}
+
+@media only screen and (max-width:576px){
+    img{
+        max-width: 100%;
+    }
+    .social-media-images{
+        margin-right: 12%;
+    }
+
+    #slideshow-booking {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-content: center;
+        margin-top: 15%;
+    }
+    .slider-image {
+        width: 90%;
+        }
+
+     #slideshow-container {
+            margin-left: 2% ;
+            border: solid 1px black;
+            flex-grow: 3;
+            max-width: 94%;
+            margin-right: 0%;
+            margin-left: 2%;
+        }
+
+        #booking-form {
+            margin-right: 4%;
+            flex-grow: 1;
+            margin-left: 2%;
+        }
+    
 }
