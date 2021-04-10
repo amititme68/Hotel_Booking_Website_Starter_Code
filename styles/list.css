@@ -3,7 +3,6 @@
     width: 250px;
 }
 
-
 .hotel{
     margin: 4% 5% 0% 5%; 
     background-color: lightgrey;
@@ -17,8 +16,6 @@
 .hotel:hover {
     background-color: rosybrown;
 }
-
-
 
 #list-container {
     position: relative;
@@ -44,8 +41,6 @@
     justify-content: center;
     margin-top: 10%;
 }
-
-
 
 @media only screen and (max-width: 768px){
     img{

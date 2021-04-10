@@ -1,5 +1,7 @@
 let headerTemplate = `<header class="header-footer">
-<img src="assests/images/logo.png" class="logo" id="logo-image" alt="logo" />
+<a href="index.html" class="logo">
+    <img src="assests/images/logo.png" id="logo-image" alt="logo"/>
+</a>
 <button type="button" id="login" class="btn btn-light btn-sm" data-toggle="modal" data-backdrop="false"
     data-target="#login-modal">LOGIN</button>
 
@@ -71,15 +73,9 @@ function logout(){
 
     // To disable pay now button in payment.html page
         document.getElementById("pay-now").disabled = true;
+
+        window.location.reload();
 }
-
-
-
-
-
-
-
-
 
 let footerTemplate = `<footer class="header-footer">
 <div id="contact">
@@ -131,3 +127,5 @@ let footerTemplate = `<footer class="header-footer">
 </footer>`;
 
 document.getElementById("footers").innerHTML = footerTemplate;
+
+

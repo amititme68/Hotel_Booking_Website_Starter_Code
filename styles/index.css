@@ -19,8 +19,6 @@
     position: relative;
 }
 
-
-
 #city-cards {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -52,9 +50,6 @@
     text-align: center;
     border-radius: 25%;
 }
-
-
-
 
 .city-card-and-name-inner {
     position: relative;
@@ -118,8 +113,6 @@
         bottom: 50%;
     }
 
-   
-
     .city-image{
         height: 200px;
         width: 200px;
@@ -153,16 +146,12 @@
         right: 28%;
         bottom: 50%;
     }
-
-    
-
     .city-image{
         height: 270px;
         width: 270px;
         border-radius: 25%;
         box-shadow: 10px 10px 10px grey;
-        margin: 6% auto;
-        
+        margin: 6% auto;  
     }
 
     #city-cards {
