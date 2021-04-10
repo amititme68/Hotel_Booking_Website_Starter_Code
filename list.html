@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<div id="loader">
+    <a href="loader.html"></a>
+</div>
+
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +20,11 @@
 
 <body>
     <div class="main-container">
-       
+
         <div id="headers"></div>
 
         <div id="list-container">
-            
+
             <ul class="nav nav-pills" id="pills-tab">
                 <li class="nav-item">
                     <a class="nav-link active" data-toggle="pill" href="#list-view">List View</a>
@@ -80,17 +84,17 @@
                         </div>
                     </div>
                 </div>
-                <div id="map-view" class="tab-pane fade">
-                    <!--Initial image removed and below script added in checkpoint 12-->
-                    <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY4kil3oaXb7282c1fKOXVXdBysqFQTjs&callback=initMap"></script>
-                </div>
+                <div id="map-view" class="tab-pane fade"></div>
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmuvjgYXLoJFWos3SqDBO4wWluzjWXFjk&callback=initMap">
+                    </script>
             </div>
         </div>
 
         <div id="footers"></div>
 
         <script src="scripts/common.js"> </script>
+        <script src="scripts/list.js"> </script>
     </div>
 </body>
 

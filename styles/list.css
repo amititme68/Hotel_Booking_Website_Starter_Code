@@ -37,6 +37,11 @@
     left: 50%;
     font-weight: bold;
 }
+
+#map-view{
+    height: 100%;
+}
+
 #pills-tab {
     justify-content: center;
     margin-top: 10%;
